@@ -1,0 +1,19 @@
+{
+    "name": "lzcalderaro/list-favorites",
+    "type": "library",
+    "description": "Wordpress plugins list favorite posts",
+    "keywords": ["Plugin","WordPress","Favorites","posts"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luiz Calderaro",
+            "email": "lzcalderaro@gmail.com"
+        }
+
+    ],
+    "require": {
+        "php": ">=5.3.9"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
