@@ -27,4 +27,4 @@ add_action( 'widgets_init', 'fav_sidebar' );
 add_shortcode('log-favorites', array('\FavListEngine\FavEngine', 'generateShortcode'));
 
 
-if(!is_admin()) wp_enqueue_script( 'action-log-favorites', plugin_dir_url( __FILE__ ) . '/js/calls.js', array( 'jquery' ), '0.1' );
+if(!is_admin()) wp_enqueue_script( 'action-log-favorites', plugin_dir_url( __FILE__ ) . '/js/calls.js', array('jquery'), '0.1' );

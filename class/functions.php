@@ -14,7 +14,6 @@ class FavEngine
             if($favList !== false){
                 die(array_key_exists($postId, $favList)? 'Remover Favorito' : 'Favoritar'); 
             }else{
-                die('entrei no else');
                 die('Favoritar');
             }
         }
