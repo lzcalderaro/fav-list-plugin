@@ -11,7 +11,7 @@ function sendfav(value)
 {
     jQuery.ajax({
         type: "POST",
-        url: "/wp-admin/admin-ajax.php",
+        url: "/wordpress/wp-admin/admin-ajax.php",
         data: {"action": "list_fav","idPost":value},
         success: function (retorno) {
 
@@ -28,7 +28,7 @@ function sendfav(value)
 function setWgSc(){
     jQuery.ajax({
         type: "POST",
-        url: "/wp-admin/admin-ajax.php",
+        url: "/wordpress/wp-admin/admin-ajax.php",
         data: {"action": "get_fav_list"},
         success: function (response) {
             if(response != 0)
@@ -52,7 +52,7 @@ function getButtonState(value)
 {
     jQuery.ajax({
         type: "POST",
-        url: "/wp-admin/admin-ajax.php",
+        url: "/wordpress/wp-admin/admin-ajax.php",
         data: {"action": "get_state_button","idPost":value},
         success: function (response) {
            jQuery("#favBtn").html(response);
